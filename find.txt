@@ -1,0 +1,11 @@
+再帰的にカレントディレクトリ内のファイルのパーミッション変更
+$ find . -type f | xargs chmod 755
+
+指定した拡張子のファイルの検索．Cファイルの例
+$ find . -name "*.c" -type f
+
+指定したファイル名の検索．"test"のファイル名があるものを指定
+$ find . -name "*test*" -type f
+
+指定したディレクトリ名の検索．"tmp"のディレクトリ名があるものを指定
+$ find . -name "*tmp*" -type d
