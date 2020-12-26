@@ -1,0 +1,2 @@
+指定の拡張子ファイル（Cファイルの例）で指定文字列を含んでいるファイル
+$ find . -type f -name "*.c" | xargs grep "debug"
