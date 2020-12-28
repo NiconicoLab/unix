@@ -1,0 +1,11 @@
+末尾の出力する文字数を指定
+$ tail -c 5 dummy.log
+
+末尾の出力する行数を指定
+$ tail -n 5 dummy.log
+
+tailコマンドを終了せず追加分を表示(ログ監視等)
+$ tail -f dummy.log
+
+tailは末尾から出力/表示，反対に先頭から表示にはheadコマンドがある
+$ head -n 5 dummy.log
