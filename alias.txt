@@ -6,3 +6,11 @@ source .bashrc
 
 ~/.bashrc
 
+to_trash() {
+    for file in $@
+    do
+        mv $file ~/.trash_
+    done
+}
+#→rmでゴミ箱に移動するように設定
+
