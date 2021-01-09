@@ -9,3 +9,9 @@ $ find . -name "*test*" -type f
 
 指定したディレクトリ名の検索．"tmp"のディレクトリ名があるものを指定
 $ find . -name "*tmp*" -type d
+
+コマンドを実行したディレクトリ(深さ1)の指定拡張子のファイル数を表示
+$ find . -maxdepth 1 -type f -a -name "*.cpp" | wc -l
+
+コマンドを実行したディレクトリから再帰的に指定拡張子のファイル数を表示
+$ find . -type f -a -name "*.cpp" | wc -l
