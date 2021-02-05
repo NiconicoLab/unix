@@ -15,3 +15,13 @@ $ find . -maxdepth 1 -type f -a -name "*.cpp" | wc -l
 
 コマンドを実行したディレクトリから再帰的に指定拡張子のファイル数を表示
 $ find . -type f -a -name "*.cpp" | wc -l
+
+複数条件(AND)でファイル検索
+$ find . -name "*.*" -and -name "*.txt"
+
+複数条件(OR)でファイル検索
+$ find . -name "*.txt" -or -name "*.md"
+
+特定ファイルを除いて検索
+$ find . -name "*.txt" -not -name "find*"
+
