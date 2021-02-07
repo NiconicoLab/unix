@@ -6,3 +6,6 @@ $ ls -l | grep txt
 
 ファイル（テキストファイルの例）で指定文字を含んでいる行を表示
 $ cat *.txt | grep "find"
+
+"bash"が付くプロセスを表示
+$ ps a | grep bash
