@@ -9,3 +9,4 @@ $ cat *.txt | grep "find"
 
 "bash"が付くプロセスを表示
 $ ps a | grep bash
+$ ps aux | grep bash
