@@ -10,3 +10,7 @@ $ cat *.txt | grep "find"
 "bash"が付くプロセスを表示
 $ ps a | grep bash
 $ ps aux | grep bash
+
+ファイル(tmp.txt)に指定文字(abc)がないものを出力する
+※vオプションは文字列を含まない行を出力
+$ grep -v abc tmp.txt
