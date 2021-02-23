@@ -1,0 +1,13 @@
+テキストファイル(tmp.txt)の指定文字(abc)を含む行を削除
+$ sed '/abc/d' tmp.txt
+
+テキストファイル(tmp.txt)の指定文字(abc)をパイプで渡して削除
+$ cat tmp.txt | sed '/abc/d'
+
+テキストファイル(tmp.txt)の指定した行(2行目)を削除
+$ sed '2d' tmp.txt
+
+テキストファイル(tmp.txt)の全ての行をまとめて削除
+$ sed '1,10d' tmp.txt
+
+※結果をリダイレクション「>」で渡せば書き込み可能
