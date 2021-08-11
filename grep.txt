@@ -17,6 +17,10 @@ $ grep -v abc tmp.txt
 
 再起的に検索する
 $ grep -r abc
+$ ggrep -r abc (MAC OSでbrewでGNUのgrepをインストールした場合)
 
 大文字と小文字を区別せずに検索する
 $ grep -i ABC
+
+同階層の検索をgrepコマンド単独で行う場合
+$ grep abc *
