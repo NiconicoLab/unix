@@ -1,0 +1,7 @@
+■ライブラリのパス設定方法
+~/.bash_profileに追記する内容
+・方法１
+LD_LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH
+・方法２
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
